@@ -13,8 +13,6 @@ def generate_launch_description():
         executable='joy_node', 
         name='joy0',
         output='screen',
-        parameters=[
-        {"device_name": "/dev/input/js0"}],
         remappings = [('/joy', launch.substitutions.LaunchConfiguration('topic_name'))]
        
      )
